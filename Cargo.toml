@@ -1,0 +1,20 @@
+[package]
+name = "mapback-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A minimalistic command-line tool designed to generate unzoomed level images from map tiles organized in a quadtree structure."
+authors = ["masaishi <mwishiha@ucsc.edu>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/masaishi/mapback-rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+image = "0.25.1"
+indicatif = "0.17.8"
+
+[[bin]]
+name = "mapback-rs"
+path = "src/main.rs"
